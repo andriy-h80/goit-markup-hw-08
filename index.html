@@ -16,7 +16,8 @@
     <!-- Шапка сторінки -->
     <header class="header">
         <div class="container">
-        <nav class="nav">
+            <div class="burger">
+            <nav class="nav">
             <a href="/"><span class="web">Web</span><span class="header__studio">Studio</span></a>
             <!-- Навігація на інші сторінки -->
             <ul class="nav__list">
@@ -39,12 +40,13 @@
                 </svg>   
             +38 096 111 11 11</a>
             </div>
-        </nav>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use class="icon-menu" href="/images/icons.svg#icon-menu_burger"></use>
-        </svg>
-        </button>
+            </nav>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-menu" href="/images/icons.svg#icon-menu_burger"></use>
+            </svg>
+            </button>
+            </div>
         </div>
     </header>
 
@@ -147,28 +149,29 @@
                     <source
                         media="(min-width: 1200px)"
                         srcset="./images/team/img-1_270@1x.webp 1x, ./images/team/img-1_270@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 768px)"
                         srcset="./images/team/img-1_354@1x.webp 1x, ./images/team/img-1_354@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 480px)"
                         srcset="./images/team/img-1_450@1x.webp 1x, ./images/team/img-1_450@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 1200px)"
                         srcset="./images/team/img-1_270@1x.jpg 1x, ./images/team/img-1_270@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <source
                         media="(min-width: 768px)"
                         srcset="./images/team/img-1_354@1x.jpg 1x, ./images/team/img-1_354@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <source
                         media="(min-width: 480px)"
                         srcset="./images/team/img-1_450@1x.jpg 1x, ./images/team/img-1_450@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <img src= " ./images/team/img-1_450@1x.jpg" alt= "Співробітник Ігор" loading="lazy"/>
+                    </picture>
                     <p class="team__name">Ігор Дем'яненко</p>
                     <p class="team__position">Product Designer</p>
                     <ul class="social">
@@ -197,7 +200,7 @@
                             </a>
                         </li>
                     </ul>
-                    </picture>
+                    <!-- </picture> -->
                     </div>
                 </li>
                 <li class="team__photo">
@@ -206,27 +209,27 @@
                     <source
                         media="(min-width: 1200px)"
                         srcset="./images/team/img-2_270@1x.webp 1x, ./images/team/img-2_270@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 768px)"
                         srcset="./images/team/img-2_354@1x.webp 1x, ./images/team/img-2_354@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 480px)"
                         srcset="./images/team/img-2_450@1x.webp 1x, ./images/team/img-2_450@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 1200px)"
                         srcset="./images/team/img-2_270@1x.jpg 1x, ./images/team/img-2_270@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <source
                         media="(min-width: 768px)"
                         srcset="./images/team/img-2_354@1x.jpg 1x, ./images/team/img-2_354@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <source
                         media="(min-width: 480px)"
                         srcset="./images/team/img-2_450@1x.jpg 1x, ./images/team/img-2_450@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <img src= "./images/team/img-2_450@1x.jpg" alt= "Співробітник Ольга" loading="lazy"/>
                     <p class="team__name">Ольга Рєпіна</p>
                     <p class="team__position">Frontend Developer</p>
@@ -265,27 +268,27 @@
                     <source
                         media="(min-width: 1200px)"
                         srcset="./images/team/img-3_270@1x.webp 1x, ./images/team/img-3_270@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 768px)"
                         srcset="./images/team/img-3_354@1x.webp 1x, ./images/team/img-3_354@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 480px)"
                         srcset="./images/team/img-3_450@1x.webp 1x, ./images/team/img-3_450@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 1200px)"
                         srcset="./images/team/img-3_270@1x.jpg 1x, ./images/team/img-3_270@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <source
                         media="(min-width: 768px)"
                         srcset="./images/team/img-3_354@1x.jpg 1x, ./images/team/img-3_354@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <source
                         media="(min-width: 480px)"
                         srcset="./images/team/img-3_450@1x.jpg 1x, ./images/team/img-3_450@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <img src= "./images/team/img-3_450@1x.jpg" alt= "Співробітник Микола" loading="lazy"/>
                     <p class="team__name">Микола Тарасов</p>
                     <p class="team__position">Marketing</p>
@@ -324,27 +327,27 @@
                     <source
                         media="(min-width: 1200px)"
                         srcset="./images/team/img-4_270@1x.webp 1x, ./images/team/img-4_270@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 768px)"
                         srcset="./images/team/img-4_354@1x.webp 1x, ./images/team/img-4_354@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 480px)"
                         srcset="./images/team/img-4_450@1x.webp 1x, ./images/team/img-4_450@2x.webp 2x"
-                        type="image/webp"/>
+                        type="image/webp">
                     <source
                         media="(min-width: 1200px)"
                         srcset="./images/team/img-4_270@1x.jpg 1x, ./images/team/img-4_270@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <source
                         media="(min-width: 768px)"
                         srcset="./images/team/img-4_354@1x.jpg 1x, ./images/team/img-4_354@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <source
                         media="(min-width: 480px)"
                         srcset="./images/team/img-4_450@1x.jpg 1x, ./images/team/img-4_450@2x.jpg 2x"
-                        type="image/jpg"/>
+                        type="image/jpg">
                     <img src= "./images/team/img-4_450@1x.jpg" alt= "Співробітник Михайло" loading="lazy"/>
                     <p class="team__name">Михайло Єрмаков</p>
                     <p class="team__position">UI Designer</p>
@@ -495,7 +498,7 @@
         </div> 
     </footer>
 
-    <!-- модальне вікно -->
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="form">
@@ -559,11 +562,42 @@
         </button>
   
         <ul class="mobile-menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
+          <li class="mobile__link"><a href="./index.html" class="link">Студія</a></li>
+          <li class="mobile__link"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+          <li class="mobile__link"><a href="/Контакти" class="nav__link">Контакти</a></li>
         </ul>
+
+        <div class="mobile__contacts">
+            <a href="tel:+380961111111" class="mobile__tel">+38 096 111 11 11</a> <br/>
+            <a href="mailto:info@devstudio.com" class="mobile__mail">info@devstudio.com</a>       
+        </div>
+
+        <ul class="mobile__list">
+            <li class="social">
+                <a href="https://www.instagram.com/"
+                target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
+                <span>Instagram</span>
+                </a>
+            </li>
+            <li class="social">
+            <a href="https://twitter.com/i/flow/login"
+                target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
+                <span>Twitter</span>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://uk-ua.facebook.com/"
+                target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
+                <span>Facebook</span>
+                </a>
+            </li>
+            <li class="social">
+                <a href="https://ua.linkedin.com/"
+                target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
+                <span>LinkedIn</span>
+                </a>
+            </li>
+        </ul>  
     </div>
 
     <script src="./js/modal.js"></script>
@@ -572,8 +606,7 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
 
 </body>

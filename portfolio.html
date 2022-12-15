@@ -16,7 +16,8 @@
     <!-- Шапка сторінки -->
     <header class="header header__border">
         <div class="container">
-        <nav class="nav">
+            <div class="burger">
+            <nav class="nav">
             <a href="/"><span class="web">Web</span><span class="header__studio">Studio</span></a>
     <!-- Навігація на інші сторінки -->
             <ul class="nav__list">
@@ -39,7 +40,13 @@
                             </svg>   
                         +38 096 111 11 11</a>
             </div>
-        </nav>
+            </nav>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-menu" href="/images/icons.svg#icon-menu_burger"></use>
+            </svg>
+            </button>
+            </div>    
         </div>
     </header>
 
@@ -50,21 +57,21 @@
             <h2 class="visually-hidden">Фільтр</h2>  
             <div class="container">
     <!-- Кнопки фільтру --> 
-            <ul class="button-filter">
+            <ul class="button__filter">
                 <li>
-                    <button type="button" class="button button-portfolio">Усі</button>
+                    <button type="button" class="button button__portfolio">Усі</button>
                 </li>
                 <li>
-                    <button type="button" class="button button-portfolio">Веб-сайти</button>
+                    <button type="button" class="button button__portfolio">Веб-сайти</button>
                 </li>
                 <li>
-                    <button type="button" class="button button-portfolio">Додатки</button>
+                    <button type="button" class="button button__portfolio">Додатки</button>
                 </li>
                 <li>
-                    <button type="button" class="button button-portfolio">Дизайн</button>
+                    <button type="button" class="button button__portfolio">Дизайн</button>
                 </li>
                 <li>
-                    <button type="button" class="button button-portfolio">Маркетинг</button>
+                    <button type="button" class="button button__portfolio">Маркетинг</button>
                 </li>
             </ul>
             </div>
@@ -76,7 +83,27 @@
                     <a href="">
                         <div class="project__shadow">
                             <div class="shadow">
-                                <img src="./images/portfolio-img01s.jpg" alt="Екран ноутбука" width="370">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-1_370@1x.webp 1x, ./images/projects/imgp-1_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-1_354@1x.webp 1x, ./images/projects/imgp-1_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-1_450@1x.webp 1x, ./images/projects/imgp-1_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-1_370@1x.jpg 1x, ./images/projects/imgp-1_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-1_354@1x.jpg 1x, ./images/projects/imgp-1_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-1_450@1x.jpg 1x, ./images/projects/imgp-1_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-1_450@1x.jpg" alt="Екран ноутбука">
+                                </picture>    
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -92,7 +119,27 @@
                     <a href="">
                         <div class="project__shadow">
                             <div class="shadow">
-                                <img src="./images/portfolio-img02s.jpg" alt="Два баскетболіста" width="370">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-2_370@1x.webp 1x, ./images/projects/imgp-2_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-2_354@1x.webp 1x, ./images/projects/imgp-2_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-2_450@1x.webp 1x, ./images/projects/imgp-2_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-2_370@1x.jpg 1x, ./images/projects/imgp-2_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-2_354@1x.jpg 1x, ./images/projects/imgp-2_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-2_450@1x.jpg 1x, ./images/projects/imgp-2_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-2_450@1x.jpg" alt="Два баскетболіста">
+                                </picture>    
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -107,8 +154,28 @@
                 <li class="projects__item">
                     <a href="">
                         <div class="project__shadow">
-                            <div class="shadow">    
-                                <img src="./images/portfolio-img03s.jpg" alt="Логотип ресторана" width="370">
+                            <div class="shadow">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-3_370@1x.webp 1x, ./images/projects/imgp-3_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-3_354@1x.webp 1x, ./images/projects/imgp-3_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-3_450@1x.webp 1x, ./images/projects/imgp-3_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-3_370@1x.jpg 1x, ./images/projects/imgp-3_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-3_354@1x.jpg 1x, ./images/projects/imgp-3_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-3_450@1x.jpg 1x, ./images/projects/imgp-3_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-3_450@1x.jpg" alt="Логотип ресторана">
+                                </picture>    
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -124,7 +191,27 @@
                     <a href="">
                         <div class="project__shadow">
                             <div class="shadow">
-                                <img src="./images/portfolio-img04s.jpg" alt="Навушники" width="370">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-4_370@1x.webp 1x, ./images/projects/imgp-4_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-4_354@1x.webp 1x, ./images/projects/imgp-4_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-4_450@1x.webp 1x, ./images/projects/imgp-4_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-4_370@1x.jpg 1x, ./images/projects/imgp-4_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-4_354@1x.jpg 1x, ./images/projects/imgp-4_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-4_450@1x.jpg 1x, ./images/projects/imgp-4_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-4_450@1x.jpg" alt="Навушники">
+                                </picture>
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -140,7 +227,27 @@
                     <a href="">
                         <div class="project__shadow">
                             <div class="shadow">
-                                <img src="./images/portfolio-img05s.jpg" alt="Дві коробки" width="370">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-5_370@1x.webp 1x, ./images/projects/imgp-5_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-5_354@1x.webp 1x, ./images/projects/imgp-5_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-5_450@1x.webp 1x, ./images/projects/imgp-5_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-5_370@1x.jpg 1x, ./images/projects/imgp-5_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-5_354@1x.jpg 1x, ./images/projects/imgp-5_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-5_450@1x.jpg 1x, ./images/projects/imgp-5_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-5_450@1x.jpg" alt="Дві коробки">
+                                </picture>
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -156,7 +263,27 @@
                     <a href="">
                         <div class="project__shadow">
                             <div class="shadow">
-                                <img src="./images/portfolio-img06s.jpg" alt="Екран монитора" width="370">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-6_370@1x.webp 1x, ./images/projects/imgp-6_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-6_354@1x.webp 1x, ./images/projects/imgp-6_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-6_450@1x.webp 1x, ./images/projects/imgp-6_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-6_370@1x.jpg 1x, ./images/projects/imgp-6_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-6_354@1x.jpg 1x, ./images/projects/imgp-6_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-6_450@1x.jpg 1x, ./images/projects/imgp-6_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-6_450@1x.jpg" alt="Екран монiтора">
+                                </picture>
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -172,7 +299,27 @@
                     <a href="">
                         <div class="project__shadow">
                             <div class="shadow">
-                                <img src="./images/portfolio-img07s.jpg" alt="Розкрита книга" width="370">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-7_370@1x.webp 1x, ./images/projects/imgp-7_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-7_354@1x.webp 1x, ./images/projects/imgp-7_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-7_450@1x.webp 1x, ./images/projects/imgp-7_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-7_370@1x.jpg 1x, ./images/projects/imgp-7_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-7_354@1x.jpg 1x, ./images/projects/imgp-7_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-7_450@1x.jpg 1x, ./images/projects/imgp-7_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-7_450@1x.jpg" alt="Розкрита книга">
+                                </picture>
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -188,7 +335,27 @@
                     <a href="">
                         <div class="project__shadow">
                             <div class="shadow">
-                                <img src="./images/portfolio-img08s.jpg" alt="Бірка на мотузці" width="370">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-8_370@1x.webp 1x, ./images/projects/imgp-8_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-8_354@1x.webp 1x, ./images/projects/imgp-8_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-8_450@1x.webp 1x, ./images/projects/imgp-8_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-8_370@1x.jpg 1x, ./images/projects/imgp-8_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-8_354@1x.jpg 1x, ./images/projects/imgp-8_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-8_450@1x.jpg 1x, ./images/projects/imgp-8_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-8_450@1x.jpg" alt="Бірка на мотузці">
+                                </picture>
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -204,7 +371,27 @@
                     <a href="">
                         <div class="project__shadow">
                             <div class="shadow">
-                                <img src="./images/portfolio-img09s.jpg" alt="Руки на клавіатурі ноутбука" width="370">
+                                <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-9_370@1x.webp 1x, ./images/projects/imgp-9_370@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-9_354@1x.webp 1x, ./images/projects/imgp-9_354@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-9_450@1x.webp 1x, ./images/projects/imgp-9_450@2x.webp 2x,"
+                                        type="image/webp">
+                                <source media="(min-width: 1200px)"
+                                        srcset="./images/projects/imgp-9_370@1x.jpg 1x, ./images/projects/imgp-9_370@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 768px)"
+                                        srcset="./images/projects/imgp-9_354@1x.jpg 1x, ./images/projects/imgp-9_354@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <source media="(min-width: 480px)"
+                                        srcset="./images/projects/imgp-9_450@1x.jpg 1x, ./images/projects/imgp-9_450@2x.jpg 2x,"
+                                        type="image/jpg">
+                                <img src="./images/projects/imgp-9_450@1x.jpg" alt="Руки на клавіатурі ноутбука">
+                                </picture>
                                     <div class="overlay">
                                         <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -228,7 +415,7 @@
         <div class="footer__contacts">
         <div>
             <h4 class="footer__logo"><span class="web">Web</span><span class="footer__studio">Studio</span></h4>
-        <address>
+        <address class="adress">
         <!-- Посилання на адресу -->    
             <a href="https://goo.gl/maps/DHbynrPCu6MxTHz17" class="footer__adress">м. Київ, пр-т Лесі Українки, 26</a> <br />
         <!-- Посилання на електронну адресу -->
@@ -288,5 +475,61 @@
         </div>
         </div> 
     </footer>
+
+   <!-- Мобільне меню -->
+   <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="icon-close" href="/images/icons.svg#icon-close_burger"></use>
+        </svg>
+    </button>
+
+    <ul class="mobile-menu">
+        <li class="mobile__link"><a href="./index.html" class="nav__link">Студія</a></li>
+        <li class="mobile__link"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li class="mobile__link"><a href="/Контакти" class="nav__link">Контакти</a></li>
+    </ul>
+    
+    <div class="mobile__contacts">
+        <a href="tel:+380961111111" class="mobile__tel">+38 096 111 11 11</a> <br/>
+        <a href="mailto:info@devstudio.com" class="mobile__mail">info@devstudio.com</a>       
+    </div>
+
+    <ul class="mobile__list">
+        <li class="social">
+            <a href="https://www.instagram.com/"
+            target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
+            <span>Instagram</span>
+            </a>
+        </li>
+        <li class="social">
+        <a href="https://twitter.com/i/flow/login"
+            target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
+            <span>Twitter</span>
+            </a>
+        </li>
+        <li class="social">
+            <a href="https://uk-ua.facebook.com/"
+            target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
+            <span>Facebook</span>
+            </a>
+        </li>
+        <li class="social">
+            <a href="https://ua.linkedin.com/"
+            target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
+            <span>LinkedIn</span>
+            </a>
+        </li>
+    </ul>
+    </div>
+    
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+  
+
 </body>
 </html>

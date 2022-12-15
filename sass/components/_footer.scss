@@ -10,19 +10,23 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (min-width: 768px){
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
 
     @media screen and (min-width: 1200px){
         flex-direction: row;
         align-items: center;
     }
-    
 }
 
 .adress{
     text-align: center;
 
     @media screen and (min-width: 1200px){
-        
+        text-align: left;
     }
     
 }
@@ -80,11 +84,13 @@
     // padding-left: 70px;
     padding-bottom: 60px;
     padding-top: 60px;
+    text-align: center;
 
     @media screen and (min-width: 1200px){
         padding-left: 70px;
         padding-bottom: 0;
         padding-top: 10px;
+        text-align: left;
     }
 }
 
@@ -99,15 +105,27 @@
 .footer__form{
     // padding-left: 93px;
     padding-top: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 768px){
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px){
+        text-align: left;
+        margin-bottom: auto;
+    }
 }
 
 .subscribe__field{
+    margin-top: 20px;
 
     @media screen and (min-width: 1200px){
-        display: flex; 
-
-    }
-    margin-top: 20px;
+        display: flex;
+        align-items: flex-end; 
+        margin-top: 0;
+    } 
 }
  
 .subscribe__input{
@@ -126,13 +144,17 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 1200px){
+        width: 358px;
+    }
 }
   
 .subscribe__button{
     margin: auto;
     margin-top: 20px;
-    // margin-left: 12px;
-    padding: 10px 28px;
+    // padding: 10px 28px;
+    padding: 10px 60px 10px 28px;
     width: 200px;
     height: 50px;
     position: relative;
@@ -150,6 +172,11 @@
     border-radius: 4px;
     border-color: transparent;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px){
+        margin-left: 12px;
+        padding: 10px 60px 10px 28px;
+    }
 }
   
 .subscribe__icon{

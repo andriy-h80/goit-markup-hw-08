@@ -1,17 +1,17 @@
 
 .advantage__name{
   
-  @media screen and (min-width: 768px) {
-    margin: 15px;
-    width: calc((100% - 4 * 15px) / 2) ;
+  @media screen and (min-width: 768px){
+      margin: 15px;
+      width: calc((100% - 4 * 15px) / 2) ;
   };
 
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 8 * 15px) / 4) ;
+  @media screen and (min-width: 1200px){
+      width: calc((100% - 8 * 15px) / 4) ;
   };
 
     &:not(:last-child){
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px){
       margin-bottom: 30px; 
     }
   }  
@@ -27,22 +27,22 @@
   background: #F5F4FA;
   border-radius: 4px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px){
     // width: 450px;
-    padding-left: 190px;
-    padding-right: 190px;
+      padding-left: 190px;
+      padding-right: 190px;
   };
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px){
     // width: 354px;
-    padding-left: 142px;
-    padding-right: 142px;
+      padding-left: 142px;
+      padding-right: 142px;
   };
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px){
     // width: 270px;
-    padding-left: 100px;
-    padding-right: 100px;
+      padding-left: 100px;
+      padding-right: 100px;
   };
 }
 
@@ -62,8 +62,8 @@
   text-transform: uppercase;
   color: var(--name-color);
 
-  @media screen and (max-width: 767px) {
-    text-align: center;
+  @media screen and (max-width: 767px){
+      text-align: center;
   }
 }
 

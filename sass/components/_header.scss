@@ -1,7 +1,7 @@
 
 .header{
     position: relative;
-    padding: 24px 0;
+    // padding: 24px 0;
 }
 
 .header__border{
@@ -11,8 +11,20 @@
 }
 
 .contacts{
-    // display: flex;
-    margin-left: auto;
+
+    @media (max-width: 767px){
+        display: none;
+    }
+
+    @media (min-width: 768px){
+        // display: block;
+        margin-left: auto;    
+    }
+
+    @media (min-width: 1200px){
+        display: flex;
+        margin-left: auto;
+    }
 }
   
 .contacts :not(:last-child){
@@ -20,9 +32,19 @@
 }
 
 .contact__item{
-    // display: flex;
+    display: flex;
     align-items: center;
     color: var(--text-color);
+
+    @media (min-width: 768px){
+        font-style: 12px;
+        line-height: 1.17;    
+    }
+
+    @media (min-width: 1200px){
+        font-style: 14px;
+        line-height: 1.14;    
+    }
 }
 
 .envelope{
@@ -51,11 +73,3 @@
     }
 }
 
-.contacts{
-    // display: flex;
-    margin-left: auto;
-}
-  
-.contacts :not(:last-child){
-    margin-right: 30px;
-}
