@@ -3,7 +3,10 @@
     display: flex;
     justify-content: center;
     margin: 0;
+    
+    @media (max-width: 767px){
     padding-bottom: 30px;
+    }
 }
 
 .social__item:not(:last-child){

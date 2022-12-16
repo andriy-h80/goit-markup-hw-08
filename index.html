@@ -27,13 +27,13 @@
             </ul>
         
             <div class="contacts">
-    <!-- Посилання на електронну адресу -->
+        <!-- Посилання на електронну адресу -->
             <a href="mailto:info@devstudio.com" class="contact__item">
                 <svg class="envelope">
                     <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>   
             info@devstudio.com</a>
-    <!-- Посилання на телефон  -->
+        <!-- Посилання на телефон  -->
             <a href="tel:+380961111111" class="contact__item">
                 <svg class="smartfone">
                     <use href="./images/icons.svg#icon-smartphone"></use>
@@ -42,23 +42,78 @@
             </div>
             </nav>
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <svg width="24" height="16" aria-label="Перемикач мобільного меню">
                 <use class="icon-menu" href="/images/icons.svg#icon-menu_burger"></use>
             </svg>
             </button>
+            <!-- Мобільне меню -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg width="24" height="16" aria-label="Перемикач мобільного меню">
+                        <use class="icon-close" href="/images/icons.svg#icon-close_burger"></use>
+                    </svg>
+                </button>
+  
+                <ul class="mobile-menu">
+                    <li class="mobile__item"><a href="./index.html" class="mobile__link link">Студія</a></li>
+                    <li class="mobile__item"><a href="./portfolio.html" class="mobile__link nav__link">Портфоліо</a></li>
+                    <li class="mobile__item"><a href="/Контакти" class="mobile__link nav__link">Контакти</a></li>
+                </ul>
+
+                <div class="mobile__contacts">
+                    <ul class="tel-mail">
+                        <li>
+                            <a href="tel:+380961111111" class="mobile__tel">+38 096 111 11 11</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com" class="mobile__mail">info@devstudio.com</a>
+                        </li>
+                    </ul>       
+                </div>
+
+                <ul class="mobile__list">
+                    <li class="mobile__social">
+                        <a href="https://www.instagram.com/"
+                        target="_blank" rel="noopener noreferrer nofollow" class="mobile__media">
+                        <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li class="mobile__social">
+                        <a href="https://twitter.com/i/flow/login"
+                        target="_blank" rel="noopener noreferrer nofollow" class="mobile__media">
+                        <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li class="mobile__social">
+                        <a href="https://uk-ua.facebook.com/"
+                        target="_blank" rel="noopener noreferrer nofollow" class="mobile__media">
+                        <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li class="mobile__social">
+                        <a href="https://ua.linkedin.com/"
+                        target="_blank" rel="noopener noreferrer nofollow" class="mobile__media">
+                        <span>LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
+
             </div>
         </div>
     </header>
 
     <!-- Унікальний контент сторінки -->
-    <main>
-        <section class="hero">
+    <main class="main">
+        <div class="hero-background">
+        <section class="hero section">
             <div class="container">
         <!-- Назва HERO -->  
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
             </div>
-        </section>    
+        </section>
+        </div>    
 
         <section class="section">
             <!-- Наші переваги -->  
@@ -233,6 +288,7 @@
                     <img src= "./images/team/img-2_450@1x.jpg" alt= "Співробітник Ольга" loading="lazy"/>
                     <p class="team__name">Ольга Рєпіна</p>
                     <p class="team__position">Frontend Developer</p>
+                    </picture>
                     <ul class="social">
                         <li class="social__item"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow" class="social__link">
                             <svg class="social__icon">
@@ -259,7 +315,6 @@
                             </a>
                         </li>
                     </ul>
-                    </picture>
                     </div>
                 </li>
                 <li class="team__photo">
@@ -292,6 +347,7 @@
                     <img src= "./images/team/img-3_450@1x.jpg" alt= "Співробітник Микола" loading="lazy"/>
                     <p class="team__name">Микола Тарасов</p>
                     <p class="team__position">Marketing</p>
+                    </picture>
                     <ul class="social">
                         <li class="social__item"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow" class="social__link">
                             <svg class="social__icon">
@@ -318,7 +374,6 @@
                             </a>
                         </li>
                     </ul>
-                    </picture>
                     </div>
                 </li>
                 <li class="team__photo">
@@ -351,6 +406,7 @@
                     <img src= "./images/team/img-4_450@1x.jpg" alt= "Співробітник Михайло" loading="lazy"/>
                     <p class="team__name">Михайло Єрмаков</p>
                     <p class="team__position">UI Designer</p>
+                    </picture>
                     <ul class="social">
                         <li class="social__item"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow" class="social__link">
                             <svg class="social__icon">
@@ -377,7 +433,6 @@
                             </a>
                         </li>
                     </ul>
-                    </picture>
                     </div>
                 </li>
             </ul>
@@ -432,7 +487,7 @@
 
     <!-- Підвал сторінки -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
         <!-- Контакти футера -->
         <div class="footer__contacts">
         <div>
@@ -506,21 +561,21 @@
                 <!-- Позиціонування іконок в input -->
                     <div class="form__field">
                         <label class="form__label" for="user-name">Ім’я</label>                    
-                        <input class="form__input" type="text" name="user-name" id="user-name" />
+                        <input class="form__input" type="text" name="user-name" id="user-name" required autocomplete="on"/>
                             <svg class="form__icon">
                                 <use href="./images/icons.svg#icon-person-black-18dp"></use>
                             </svg>
                     </div>
                     <div class="form__field">
                         <label class="form__label" for="user-tel">Телефон</label>
-                        <input class="form__input" type="tel" name="user-tel" id="user-tel" />
+                        <input class="form__input" type="tel" name="user-tel" id="user-tel" autocomplete="on"/>
                             <svg class="form__icon">
                                 <use href="./images/icons.svg#icon-phone-black-18dp"></use>
                             </svg>
                     </div>
                     <div class="form__field">
                         <label class="form__label" for="user-email">Пошта</label>
-                        <input class="form__input" type="email" name="user-email" id="user-email" />
+                        <input class="form__input" type="email" name="user-email" id="user-email" autocomplete="on"/>
                             <svg class="form__icon">
                                 <use href="./images/icons.svg#icon-email-black-18dp"></use>
                             </svg>
@@ -532,7 +587,7 @@
 
                 <!-- оформлення чекбоксу -->
                     <div class="check-line input-line">
-                        <input class="visually-hidden" type="checkbox" name="checkbox-agree" value="agree" id="checkbox-agree"/>
+                        <input class="visually-hidden" type="checkbox" name="checkbox-agree" value="agree" id="checkbox-agree" required/>
                         <label for="checkbox-agree" class="checkbox-agree">
                         <span class="icon-wrapper">
                         <svg class="agree-icon" width="16" height="15">
@@ -553,52 +608,7 @@
         </div>
     </div>
 
-    <!-- Мобільне меню -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                <use class="icon-close" href="/images/icons.svg#icon-close_burger"></use>
-            </svg>
-        </button>
-  
-        <ul class="mobile-menu">
-          <li class="mobile__link"><a href="./index.html" class="link">Студія</a></li>
-          <li class="mobile__link"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
-          <li class="mobile__link"><a href="/Контакти" class="nav__link">Контакти</a></li>
-        </ul>
-
-        <div class="mobile__contacts">
-            <a href="tel:+380961111111" class="mobile__tel">+38 096 111 11 11</a> <br/>
-            <a href="mailto:info@devstudio.com" class="mobile__mail">info@devstudio.com</a>       
-        </div>
-
-        <ul class="mobile__list">
-            <li class="social">
-                <a href="https://www.instagram.com/"
-                target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
-                <span>Instagram</span>
-                </a>
-            </li>
-            <li class="social">
-            <a href="https://twitter.com/i/flow/login"
-                target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
-                <span>Twitter</span>
-                </a>
-            </li>
-            <li class="social">
-                <a href="https://uk-ua.facebook.com/"
-                target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
-                <span>Facebook</span>
-                </a>
-            </li>
-            <li class="social">
-                <a href="https://ua.linkedin.com/"
-                target="_blank" rel="noopener noreferrer nofollow" class="mobile__social">
-                <span>LinkedIn</span>
-                </a>
-            </li>
-        </ul>  
-    </div>
+   
 
     <script src="./js/modal.js"></script>
 
