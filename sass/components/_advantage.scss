@@ -1,15 +1,19 @@
 
 .advantage__name{
-  width:100%;
-  // max-width: 479px;
+  border-radius: 4px;
+
+  @media screen and (max-width: 767px){
+  width:100vw;
+  max-width: 450px;
+  }
 
   @media screen and (min-width: 768px){
-      margin: 15px;
-      width: calc((100% - 4 * 15px) / 2) ;
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2) ;
   };
 
   @media screen and (min-width: 1200px){
-      width: calc((100% - 8 * 15px) / 4) ;
+    width: calc((100% - 8 * 15px) / 4) ;
   };
 
     &:not(:last-child){
@@ -19,32 +23,36 @@
   }  
 }
 
-.advantage__button{
-  padding-left: auto;
-  padding-right: auto;
+.advantage__cards{
+  // padding-left: auto;
+  // padding-right: auto;
   border: none;
-  width: 100%;
+  text-align: center;
   height: 120px;
   color: #212121;
   background: #F5F4FA;
   border-radius: 4px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  // width: 100%;
+  // max-width: 450px;
 
   @media screen and (min-width: 480px){
-    // width: 450px;
-      padding-left: 190px;
-      padding-right: 190px;
+    max-width: 450px;
+    padding-left: 190px;
+    padding-right: 190px;
   };
 
   @media screen and (min-width: 768px){
-    // width: 354px;
-      padding-left: 142px;
-      padding-right: 142px;
+    max-width: 354px;
+    padding-left: 142px;
+    padding-right: 142px;
   };
 
   @media screen and (min-width: 1200px){
-    // width: 270px;
-      padding-left: 100px;
-      padding-right: 100px;
+    max-width: 270px;
+    padding-left: 100px;
+    padding-right: 100px;
   };
 }
 
@@ -65,7 +73,7 @@
   color: var(--name-color);
 
   @media screen and (max-width: 767px){
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -74,4 +82,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  width: 100%;
+  max-width: 450px;
 }

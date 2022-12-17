@@ -54,9 +54,10 @@
     position: fixed;
     top: 0;
     left: 0;
+    padding: 48px 40px;
+    
     width: 100%;
     height: 100%;
-    padding: 48px 40px;
     background-color: var(--white-color);
     z-index: 999;
   
@@ -84,6 +85,10 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+    @media screen and (max-width: 479px){
+      width: 100vw;
+    }
 }
   
 .mobile__menu .mobile__link {
@@ -99,12 +104,6 @@
       padding: 10px;
       width: 100%;
   }
-
-  @media screen and (min-width: 768px){
-      
-  }
-
-
 }
 
 

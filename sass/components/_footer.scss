@@ -154,8 +154,8 @@
 }
  
 .subscribe__input{
-    width: 100%;
-    width: 450px;
+    width: 100vw;
+    max-width: 450px;
     height: 50px;
     padding-left: 16px;  
     border: 1px solid rgba(255, 255, 255, 0.3);

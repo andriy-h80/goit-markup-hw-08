@@ -1,25 +1,26 @@
 
 .our-team{
     background-color: #f5f4fa;
-
 }
 
 .team__photo{
     margin: 15px;
+    width: 100vw;
+    max-width: 450px;
 
     @media screen and (min-width: 768px){
-          width: calc((100% - 4 * 15px) / 2) ;
-      };
+        width: calc((100% - 4 * 15px) / 2)
+    }
     
-      @media screen and (min-width: 1200px){
-          width: calc((100% - 8 * 15px) / 4) ;
-      };
+    @media screen and (min-width: 1200px){
+        width: calc((100% - 8 * 15px) / 4)
+    }
     
-        &:not(:last-child){
+    &:not(:last-child){
         @media screen and (max-width: 767px) {
             margin-bottom: 30px; 
         }
-      }  
+    }  
 }
 
 .team__border{
