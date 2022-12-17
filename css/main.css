@@ -627,7 +627,6 @@ li {
   padding-bottom: 118px;
   text-align: center;
   width: 100%;
-  max-width: 479px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -1229,12 +1228,7 @@ textarea:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .our-clients {
-    margin: 0;
-  }
+  margin-bottom: 0px;
 }
 
 .clients__name {
@@ -1470,7 +1464,7 @@ textarea:hover {
 }
 
 .project__name {
-  width: 100vw;
+  width: 100%;
   max-width: 450px;
   margin: 0;
   padding-top: 20px;

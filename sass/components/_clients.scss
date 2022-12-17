@@ -6,13 +6,7 @@
 .our-clients{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;
-    // margin-top: 30px;
-    
-    @media screen and (min-width: 1200px){
-        margin: 0;
-        // margin-bottom: 94px;
-    }
+    margin-bottom: 0px;
 }
 
 .clients__name{
