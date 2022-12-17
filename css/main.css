@@ -162,55 +162,73 @@ li {
   border-bottom-color: #ECECEC;
 }
 
-@media (max-width: 767px) {
-  .contacts {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .contacts {
-    margin-left: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: auto;
-  }
-}
-
-.contacts :not(:last-child) {
-  margin-right: 30px;
-}
-
-.contact__item {
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--text-color);
 }
-@media (min-width: 768px) {
-  .contact__item {
-    font-style: 12px;
-    line-height: 1.17;
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-top: auto;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 90px;
+    gap: 10px;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: auto;
+    gap: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+.contact__item {
+  display: none;
+}
+@media screen and (min-width: 768px) {
   .contact__item {
-    font-style: 14px;
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--text-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    font-size: 14px;
     line-height: 1.14;
+  }
+  .contact__item:not(:first-child) {
+    margin-left: 30px;
   }
 }
 
 .envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 .envelope:hover, .envelope:focus {
   fill: var(--hover-color);
@@ -222,8 +240,15 @@ li {
 
 .smartfone {
   width: 10px;
-  height: 16px;
-  margin-right: 10px;
+  height: 14px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .smartfone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 .smartfone:hover, .smartfone:focus {
   fill: var(--hover-color);
@@ -292,7 +317,7 @@ li {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -307,24 +332,24 @@ li {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .nav__list {
     display: none;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
+    margin-left: 88px;
     margin-top: 0;
     margin-bottom: 0;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .nav__list {
-    margin-left: 92px;
+    margin-left: 93px;
   }
 }
 
@@ -339,7 +364,7 @@ li {
   letter-spacing: 0.02em;
   color: var(--name-color);
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav__link {
     font-size: 14px;
     line-height: 1.14;
@@ -361,7 +386,7 @@ li {
   color: var(--hover-color);
   position: relative;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .link {
     font-size: 14px;
     line-height: 1.14;
@@ -388,7 +413,7 @@ li {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -428,7 +453,7 @@ li {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -468,19 +493,18 @@ li {
   color: var(--white-color);
 }
 
-.mobile-menu {
+.mobile__menu {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.mobile-menu .mobile__link {
+.mobile__menu .mobile__link {
   display: block;
-  padding: 16px 0;
   text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -492,16 +516,25 @@ li {
         -ms-flex-align: center;
             align-items: center;
     padding: 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    width: 100%;
   }
 }
 .mobile__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: auto;
-}
-
-.tel-mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,21 +544,21 @@ li {
           flex-direction: column;
 }
 
-.mobile__tel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.mobile__item {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 16px 0;
+}
+
+.mobile__tel {
   font-size: 34px;
   line-height: 1.18;
   color: var(--hover-color);
 }
 
 .mobile__mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 16px 0;
   font-size: 24px;
   line-height: 1.17;
   color: var(--text-color);
@@ -934,6 +967,9 @@ textarea:hover {
   background-origin: border-box;
 }
 
+.advantage__name {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .advantage__name {
     margin: 15px;
@@ -1272,28 +1308,27 @@ textarea:hover {
      -moz-column-gap: 8px;
           column-gap: 8px;
   row-gap: 15px;
+  width: 100%;
+  max-width: 479px;
 }
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .button__filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    max-width: 676px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .button__filter {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 1199px;
     margin-bottom: 30px;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .button__filter {
     margin-bottom: 34px;
   }
@@ -1317,7 +1352,7 @@ textarea:hover {
   margin: 0;
   padding: 0;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .projects {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1329,21 +1364,24 @@ textarea:hover {
 }
 
 .projects__item {
-  width: 450px;
+  width: 100%;
+  max-width: 479px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .projects__item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .projects__item {
     width: calc((100% - 90px) / 3);
   }
 }
-.projects__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .projects__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .shadow {
@@ -1395,6 +1433,8 @@ textarea:hover {
 }
 
 .project__name {
+  width: 100%;
+  max-width: 450px;
   margin: 0;
   padding-top: 20px;
   padding-bottom: 4px;
@@ -1421,6 +1461,15 @@ textarea:hover {
   min-width: 480px;
 }
 
+.footer__container {
+  width: 100%;
+  max-width: 479px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer__container {
+    max-width: 767px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
     display: -webkit-box;
@@ -1430,19 +1479,18 @@ textarea:hover {
         flex-wrap: wrap;
     padding-left: 76px;
     padding-right: 89px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    max-width: 1200px;
   }
 }
 
@@ -1596,6 +1644,7 @@ textarea:hover {
 }
 
 .subscribe__input {
+  width: 100%;
   width: 450px;
   height: 50px;
   padding-left: 16px;

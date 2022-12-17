@@ -6,7 +6,7 @@
     list-style: none;
   }
   
-    @media (max-width: 767px){
+    @media screen and (max-width: 767px){
       .menu {
         display: none;
     }
@@ -44,7 +44,7 @@
     }
   }
   
-  @media (min-width: 768px){
+  @media screen and (min-width: 768px){
     .menu-toggle {
       display: none;
     }
@@ -80,49 +80,65 @@
     color: var(--white-color);
 }
   
-.mobile-menu{
+.mobile__menu{
     padding: 0;
     margin: 0;
     list-style: none;
 }
   
-.mobile-menu .mobile__link {
+.mobile__menu .mobile__link {
     display: block;
-    padding: 16px 0;
     text-decoration: none;
 }
 
-@media (max-width: 767px){
+.burger{
+  @media screen and (max-width: 767px){
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      width: 100%;
+  }
+
+  @media screen and (min-width: 768px){
+      
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 767px){
     .burger{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    width: 100%;
   }
 }
 
-.mobile__contacts{
-  // padding-left: 40px;
-  display: flex;
-  margin-top: auto;
-}
 
-.tel-mail{
+
+.mobile__contacts{
   display: flex;
   flex-direction: column;
 }
 
-.mobile__tel{
-  display: flex;
+.mobile__item{
+  display: block;
+  align-items: center;
   padding: 16px 0;
+}
+
+.mobile__tel{
   font-size: 34px;
   line-height: 1.18;
   color: var(--hover-color);
 }
 
 .mobile__mail{
-  display: flex;
-  padding: 16px 0;
   font-size: 24px;
   line-height: 1.17;
   color: var(--text-color);

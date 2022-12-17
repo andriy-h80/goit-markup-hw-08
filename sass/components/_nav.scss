@@ -1,7 +1,7 @@
 
 .nav{
 
-    @media (min-width: 768px){
+    @media screen and (min-width: 768px){
         display: flex;
         align-items: center;
     
@@ -23,19 +23,19 @@
 
 .nav__list{
     
-    @media (max-width: 767px){
+    @media screen and (max-width: 767px){
         display: none;
     }
     
-    @media (min-width: 768px){
+    @media screen and (min-width: 768px){
         display: flex;
-        margin-left: auto;
+        margin-left: 88px;;
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    @media (min-width: 1200px){
-        margin-left: 92px;
+    @media screen and (min-width: 1200px){
+        margin-left: 93px;
     }
 }   
   
@@ -50,7 +50,7 @@
     letter-spacing: 0.02em;
     color: var(--name-color);
 
-    @media (min-width: 768px){
+    @media screen and (min-width: 768px){
         font-size: 14px;
         line-height: 1.14;   
     }
@@ -71,7 +71,7 @@
     color: var(--hover-color);
     position: relative;
 
-    @media (min-width: 768px){
+    @media screen and (min-width: 768px){
         font-size: 14px;
         line-height: 1.14;
 

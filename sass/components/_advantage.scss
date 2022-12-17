@@ -1,6 +1,8 @@
 
 .advantage__name{
-  
+  width:100%;
+  // max-width: 479px;
+
   @media screen and (min-width: 768px){
       margin: 15px;
       width: calc((100% - 4 * 15px) / 2) ;

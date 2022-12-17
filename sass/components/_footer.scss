@@ -7,18 +7,25 @@
 }
 
 .footer__container{
-    
+    width: 100%;
+    max-width: 479px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px){
+        max-width: 767px;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px){
         display: flex;
         flex-wrap: wrap;
         padding-left: 76px;
         padding-right: 89px;
+        max-width: 768px;
     }
 
     @media screen and (min-width: 1200px){
-        display: flex;
         justify-content: center;
         align-items: baseline;
+        max-width: 1200px;
     }
 }
 
@@ -147,6 +154,7 @@
 }
  
 .subscribe__input{
+    width: 100%;
     width: 450px;
     height: 50px;
     padding-left: 16px;  
