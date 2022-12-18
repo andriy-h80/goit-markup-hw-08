@@ -171,7 +171,6 @@ li {
   position: relative;
   min-width: 480px;
 }
-
 .header__border {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -497,6 +496,12 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 479px) {
+  .menu-container {
+    width: 100%;
+    height: 100%;
+  }
+}
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -734,8 +739,8 @@ li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 450px;
-  min-height: 609px;
+  width: 450px;
+  height: 609px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -743,8 +748,8 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -831,7 +836,7 @@ li {
 }
 
 .form__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding: 10px;
   padding-left: 42px;
@@ -843,6 +848,11 @@ li {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .form__input {
+    width: 448px;
+  }
 }
 .form__input:hover, .form__input:focus {
   border-color: var(--hover-color);
@@ -895,8 +905,13 @@ textarea:hover {
   height: 1px;
   position: absolute;
   right: 0;
-  bottom: 6px;
+  bottom: 1px;
   background-color: var(--hover-color);
+}
+@media screen and (min-width: 1200px) {
+  .contract::before {
+    bottom: 6px;
+  }
 }
 
 .modal-button {
@@ -937,10 +952,16 @@ textarea:hover {
           align-items: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   padding-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-agree {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-agree .icon-wrapper {
@@ -996,6 +1017,7 @@ textarea:hover {
   .advantage__name {
     width: 100vw;
     max-width: 450px;
+    margin: 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1168,8 +1190,9 @@ textarea:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
+  padding-bottom: 24px;
 }
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
   .social {
     padding-bottom: 30px;
   }
@@ -1193,9 +1216,7 @@ textarea:hover {
           justify-content: center;
   border-radius: 50%;
 }
-
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--hover-color);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -1208,9 +1229,7 @@ textarea:hover {
   height: 20px;
   fill: #AFB1B8;
 }
-
-.social__icon:hover,
-.social__icon:focus {
+.social__icon:hover, .social__icon:focus {
   fill: var(--white-color);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -1464,7 +1483,7 @@ textarea:hover {
 }
 
 .project__name {
-  width: 100%;
+  width: 100vw;
   max-width: 450px;
   margin: 0;
   padding-top: 20px;
@@ -1492,9 +1511,10 @@ textarea:hover {
   min-width: 480px;
 }
 
-.footer__container {
-  width: 100%;
-  max-width: 479px;
+@media screen and (max-width: 479px) {
+  .footer__container {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer__container {
@@ -1613,7 +1633,6 @@ textarea:hover {
   border-radius: 50%;
   margin-right: 10px;
 }
-
 .footer__icons:last-child {
   margin-right: 0;
 }
