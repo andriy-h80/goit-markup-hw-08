@@ -62,7 +62,7 @@
 .footer__adress{
     font-size: 14px;
     line-height: 1.71;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     letter-spacing: 0.03em;
     color: var(--white-color);
 
@@ -118,6 +118,8 @@
         padding-bottom: 0;
         padding-top: 10px;
         padding-right: 93px;
+        margin-top: 6px;
+        margin-bottom: 6px;
         text-align: left;
     }
 }
@@ -132,18 +134,21 @@
 
 .footer__form{
     // padding-left: 93px;
-    padding-top: 10px;
+    // padding-top: 10px;
     text-align: center;
 
     @media screen and (min-width: 768px) and (max-width:1199px){
         margin-left: auto;
         margin-right: auto;
+        padding-top: 60px;
     }
 
     @media screen and (min-width: 1200px){
         display: block;
         text-align: left;
         margin-left: auto;
+        padding-top: 0px;
+        padding-bottom: 10px;
     }
 }
 

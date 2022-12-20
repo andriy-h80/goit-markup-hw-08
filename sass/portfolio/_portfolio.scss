@@ -123,6 +123,12 @@
 //     margin-bottom: 0;
 // }
 
+.project__image{
+    @media screen and (max-width: 479px){
+        width: 100vw;
+    }
+}
+
 .shadow{
     position: relative;
     overflow: hidden;
